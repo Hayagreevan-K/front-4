@@ -8,48 +8,50 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work">Work Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-            <p>A Passionate Web Developer</p>
-            <a href="#contact" class="btn">Hire Me</a>
-        </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <h1>Hi, I'm <span>Your Name</span></h1>
+        <p>A Web Developer Passionate About Building Amazing Experiences</p>
     </section>
 
-    <section id="about">
+    <!-- About Section -->
+    <section id="about" class="about">
         <h2>About Me</h2>
-        <p>Hello! I'm a web developer with a passion for building user-friendly websites and applications.</p>
+        <p>Hello! I am a web developer specializing in creating clean and user-friendly web applications. I love solving complex problems and learning new technologies.</p>
         <img src="assets/profile.jpg" alt="Profile Picture">
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="assets/project1.jpg" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>A brief description of the project.</p>
+    <!-- Work Experience Section -->
+    <section id="work" class="work">
+        <h2>Work Experience</h2>
+        <div class="experience">
+            <h3>Frontend Developer - Tech Company A</h3>
+            <span>Jan 2023 - Present</span>
+            <p>Developed user interfaces for web applications using HTML, CSS, and JavaScript, ensuring responsiveness and cross-browser compatibility.</p>
         </div>
-        <div class="project">
-            <img src="assets/project2.jpg" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>A brief description of the project.</p>
+        <div class="experience">
+            <h3>Web Developer Intern - Tech Company B</h3>
+            <span>Jun 2022 - Dec 2022</span>
+            <p>Assisted in building dynamic websites and collaborated with backend teams to integrate APIs.</p>
         </div>
     </section>
 
-    <section id="skills">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
         <h2>Skills</h2>
-        <ul class="skills-list">
+        <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -58,17 +60,19 @@
         </ul>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out for collaborations or just a friendly chat!</p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email or phone for collaborations or opportunities!</p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Your Name. All Rights Reserved.</p>
     </footer>
