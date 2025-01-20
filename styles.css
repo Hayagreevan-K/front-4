@@ -132,4 +132,20 @@ ul li {
 ul li strong {
     color: #333;
 }
+/* Styling for Project Links */
+.projects a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+.projects a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+.project-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
 
