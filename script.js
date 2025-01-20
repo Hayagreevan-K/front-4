@@ -1,5 +1,14 @@
-// Add interactivity if needed, e.g., form validation, animations, etc.
-document.querySelector('form').addEventListener('submit', (e) => {
+document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
-    alert('Thank you for reaching out!');
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    if (name && email && message) {
+        alert(`Thank you, ${name}! Your message has been sent.`);
+        document.getElementById("contactForm").reset();
+    } else {
+        alert("Please fill out all fields.");
+    }
 });
